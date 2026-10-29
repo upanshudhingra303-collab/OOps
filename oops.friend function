@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class A{
+private:
+    int x;
+    public:
+    A(int l){
+      x=l;    
+    }
+    friend void print(A a);
+
+};
+
+void print(A a){
+    cout<<a.x;
+    
+}
+int main(){
+  A a1(20);
+  print(a1);
+}
