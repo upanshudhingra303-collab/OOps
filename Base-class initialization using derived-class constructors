@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+ class A{
+     int x;
+     public:
+     A(int n){
+         x=n;
+         cout<<"A class"<<x<<endl;
+     }
+ };
+class B:public A{
+    int y;
+    public :
+    B(int a,int b):A(a){
+        y=b;
+        cout<<"B class"<<y<<endl;
+        
+    }
+};
+int main()
+{
+
+    B b(19,20);
+}
